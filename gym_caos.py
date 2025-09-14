@@ -4,7 +4,7 @@ import seaborn as sns
 
 class Gym:
     def __init__(self):
-        self.dumbbells = [i for i in range(10,50) if i%2==0]
+        self.dumbbells = [i for i in range(10,36) if i%2==0]
         self.places = {}
         self.reboot()
 
@@ -59,7 +59,7 @@ class User:
 
 gym = Gym()
 
-users = [User(1,gym) for i in range(20)]
+users = [User(1,gym) for i in range(10)]
 users += [User(2,gym) for i in range(1)]
 random.shuffle(users)
 
